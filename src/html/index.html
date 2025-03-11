@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js"></script>
+    <script type="module" src="../functions/action.js"></script>
+    <label class="first-plain">
+        <input type="checkbox" id="alwaysOnTop">
+        Manter janela no topo
+    </label>
+    <div class="container">
+        <img class="img-jarvis" src="../assets/img/jarviis-gif.gif" />
+        <div class="container-input">
+            <span title="precione CTRL + ALT para falar, solte quando terminar." class="input-name">Pergunte ao
+                Jarvis</span>
+            <div style="padding-top: 2px;">
+                <img id="action-transcribe-play" class="img-mic" src="../assets/img/mic.png" />
+                <img id="action-transcribe-stop" class="img-mic" src="../assets/img/close.png" />
+            </div>
+        </div>
+        <br />
+        <span style="color: aliceblue; padding-bottom: 50px;" id="transcribe"></span>
+    </div>
+</body>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .container {
+        height: 455px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-jarvis {
+        width: 370px;
+        height: 250px;
+    }
+
+    .img-mic {
+        width: 15px;
+        height: 15px;
+    }
+
+    .container-input {
+        display: flex;
+    }
+
+    .input-name {
+        background-color: black;
+        color: rgba(138, 138, 138, 0.787);
+        font-size: 14px;
+        width: 120px;
+        user-select: none;
+        border: 0px;
+    }
+    
+    .first-plain{
+        font-size: 12px;
+        color: rgba(138, 138, 138, 0.787);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+
+</html>

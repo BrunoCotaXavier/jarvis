@@ -1,0 +1,29 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.seuapp.electron",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^34.3.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^6.7.1",
+    "@gradio/client": "^1.13.1",
+    "openai": "^4.85.4",
+    "replicate": "^1.0.1"
+  }
+}
