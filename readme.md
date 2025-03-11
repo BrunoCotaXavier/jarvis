@@ -1,3 +1,6 @@
+# Explicando o projeto
+Jarvis é um assistente virtual inteligente atualmente desenvolvido para Mac, inclui algumas funcionalidades e com o tempo vou aumentando elas.
+
 # Dependencias Mac
 - Electron
 - ffmpeg
